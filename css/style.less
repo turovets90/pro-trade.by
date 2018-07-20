@@ -1147,19 +1147,73 @@ header{
         border-left:0;
       }
 
+
+      &:hover{
+
+        figure{
+          &:before{
+            opacity: 1;
+          }
+          figcaption{
+            background: rgba(0, 0, 0, 0.65);
+            .cat_name{
+              top: 30%;
+              bottom: auto;
+            }
+            .more{
+              bottom: 38%;
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+
       figure{
         position: absolute;
         width: 100%;
         height: 100%;
         left: 0;
         top: 0;
+
+        figcaption{
+          position: absolute;
+          left: 40px;
+          right: 40px;
+          top: 40px;
+          bottom: 40px;
+          .transition(@transition_default);
+        }
+
       }
 
       .cat_name{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
         color: #fff;
         font: 32px @PragmaticaCTT_bold;
         text-align: center;
-
+        .transition(@transition_default);
+      }
+      .more{
+        display: inline-block;
+        color: #fff;
+        border:1px solid #fff;
+        font: 18px @PragmaticaCTT_bold;
+        text-transform: uppercase;    padding: 19px;
+        width: 100%;
+        max-width: 195px;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 0;
+        .transition(@transition_default);
+        opacity: 0;
       }
 
     }
