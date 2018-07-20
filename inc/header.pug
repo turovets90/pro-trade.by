@@ -1,0 +1,96 @@
+-var main_menu =['О компании','Где купить','Дилерам','Примеры работ','Контакты'];
+header
+    .container-fluid
+        .row
+            .col-6.col-sm-6.col-md-6.col-xl-3.logo_block
+                .logo
+                    a(href="#")
+                        img(src="img/logo.png")
+            .col-2.col-sm-2.col-md-2.col-xl-3.d-flex.d-xl-none.justify-content-center.align-items-center
+                .dropdown.contacts_mobile
+                    button.phone_mobile_btn(id="contacts_mobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                    .dropdown-menu(aria-labelledby="contacts_mobile")
+                        .contacts
+                            ul
+                                li
+                                    a.mail(href="mailto:info@pro-trade.ru") info@pro-trade.ru
+                                li
+                                    a.phone(href="tel:+375172260306") + 375 (17) 226 03 06
+                                li
+                                    a.m_phone(href="tel:+375296168416") + 375 (29) 616 84 16
+
+            .col-4.col-sm-4.col-md-4.col-xl-3.d-flex.d-xl-none.justify-content-end.align-items-center
+                .mobile_menu_btn
+                    span Меню
+                    button.hamburger
+
+            .col-12.col-sm-12.col-md-12.col-xl-9.h_right_content
+                .h_row_1
+                    .col_left
+                        .main_menu
+                            span.close_menu
+                                svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 59")
+                                    path.c_icon(d="M49.7 48.3c.9.9-.5 2.3-1.4 1.4L30 31.4 11.7 49.7c-.9.9-2.3-.5-1.4-1.4L28.6 30 10.3 11.7c-.9-.9.5-2.3 1.4-1.4L30 28.6l18.3-18.3c.9-.9 2.3.5 1.4 1.4L31.4 30l18.3 18.3z")
+                            ul.nav
+                                for menu_item,index in main_menu
+                                    if index == 0
+                                        li.has_sub-menu.active
+                                            a(href="" + menu_item + '.html')=menu_item
+                                            span.arrow
+                                            ul.sub-menu
+                                                -for(var i=1;i<=5;i++)
+                                                    li
+                                                        a(href="#") link #{i}
+                                    else if index == 1
+                                        li.has_sub-menu
+                                            a(href="" + menu_item + '.html')=menu_item
+                                            span.arrow
+                                            ul.sub-menu
+                                                -for(var i=1;i<=5;i++)
+                                                    li
+                                                        a(href="#") link #{i}
+                                    else
+                                        li
+                                            a(href="" + menu_item + '.html')=menu_item
+                        .row.h_row_2
+                            .col-9.col-sm-9.col-md-9.col-xl-4
+                                .h_catalog
+                                    a.h_catalog_btn(href="#") Каталог
+                                        span.hamburger
+                                            span
+                                            span
+                                            span
+                            .col-3.col-sm-3.col-md-3.col-xl-8
+                                button.search_mobile_btn
+                                .search_form_block_fixed
+                                    span.search_close
+                                    .search_form_block
+                                        form.search_form
+                                            input.form-control(type="text" placeholder="Поиск по товарам")
+                                            button.search_btn(type="submit")
+
+
+                    .col_right
+                        .contacts_block.d-none.d-xl-block
+                            .contacts
+                                ul
+                                    li
+                                        a.mail(href="mailto:info@pro-trade.ru") info@pro-trade.ru
+                                    li
+                                        a.phone(href="tel:+375172260306") + 375 (17) 226 03 06
+                                    li
+                                        a.m_phone(href="tel:+375296168416") + 375 (29) 616 84 16
+                        .cart_block
+                            a.cart_link(href="#")
+                                p Корзина
+                                .cart_icon_count
+                                    i.cart_icon
+                                    span.count 100
+
+
+
+
+
+
+
+

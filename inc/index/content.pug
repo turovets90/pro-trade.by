@@ -1,0 +1,25 @@
+section.section_main_slider
+    .main_slider
+        -for(var i=1;i<=5;i++)
+            .slider_item(style="background-image:url(img/main_slider.png)")
+                .slider_caption
+                    p.first <span>25 лет</span>  опыта работы
+                    p Мы создаем удобные и выгодные интерьерные решения для людей и компаний, стремящихся развивать свой успех.
+                    p.d-none.d-md-block Мы предлагаем стильную, функциональную мебель и такое качество отношений, чтобы нас рекомендовали всем своим знакомым.
+                    a.btn_default_nobg(href="#") подробнее о компании
+    .slider_btn_group
+        button.slider_prev
+        button.slider_next
+section.main_catalog
+    .title_section
+        p.title Виды продукции
+        span.title__opacity Виды продукции
+    -var category = ['Мебель для кабинета руководителя', 'Мебель для персонала', 'Мебель по индивидуальному заказу'];
+    .container-fluid
+        .row.category_list
+            -for(var i=0;i<=2;i++)
+                a.col-12.col-sm-12.col-md-6.col-xl-4.item(href="#" style="background-image:url(img/cat_"+i+".png)")
+                    figure
+                        figcaption
+                            p.cat_name=category[i]
+                            span.more Подробнее
