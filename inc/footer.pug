@@ -1,0 +1,52 @@
+-var f_menu_1 = ['Мебель для персонала','Мебель для среднего управленческого звена','Мебель для кабинета руководителя','Мебель для приемных (ресепшн)','Мебель для переговорных (стол для переговоров)','Офисные кресла','Офисные стулья'];
+-var f_menu_2 = ['НОВИНКИ!','Мебель для гостиниц','Мебель по индивидуальным проектам','Функциональные модули','Кухни для офиса (шкафы, стеллажи для офиса','Офисные столы','Офисная мебель в лизинг'];
+footer
+    .container
+        .row
+            .col-12.col-sm-12.col-md-12.col-xl-6
+                p.f_title Каталог
+                .row
+                    .col-12.col-sm-12.col-md-6.col-xl-6
+                        ul.f_nav
+                            for menu_item in f_menu_1
+                                li
+                                    a(href="" + menu_item + '.html')=menu_item
+                    .col-12.col-sm-12.col-md-6.col-xl-6
+                        ul.f_nav
+                            for menu_item_2 in f_menu_2
+                                li
+                                    a(href="" + menu_item_2 + '.html')=menu_item_2
+
+                .row
+                    .col-12
+                        a.btn_default_nobg(href="#") Скачать каталог (pdf)
+                .row.contact_left_col
+                    .col-12.col-sm-12.col-md-6.col-xl-6
+                        p НАписать нам
+                        a.mail(href="mailto:info@pro-trade.ru") info@pro-trade.ru
+                    .col-12.col-sm-12.col-md-6.col-xl-6
+                        p Мы в соц. Сетях
+                        ul.social
+                            li
+                                a.instagram(href="#")
+            .col-12.col-sm-12.col-md-12.col-xl-6
+                p.f_title Контакты
+                .row.f_contacts_row
+                    -for(var i=0;i<=4;i++)
+                        .col-12.col-sm-6.col-md-6.col-xl-6.item
+                            span.city Город
+                            ul.contacts_list
+                                li.location ул. Врублевского, 5а
+                                li.phone + 375 (0152) 48 59 79 тел./факс <br> + 375 (0152) 48 05 50
+                                li.m_phone + 375 (44) 760 02 52
+
+
+.copyright
+    .container
+        .row
+            .col-12.col-m-12.col-md-6.col-xl-6
+                p ©2016 Pro-Trade
+
+            .col-12.col-m-12.col-md-6.col-xl-6
+                p.seologic
+                    a(href="#") Разработка сайта - Seologic

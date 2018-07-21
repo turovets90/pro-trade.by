@@ -23,3 +23,75 @@ section.main_catalog
                         figcaption
                             p.cat_name=category[i]
                             span.more Подробнее
+-var about_title = ['Широкий ассортимент','Быстрое изготовление', 'Индивидуальный подход' ];
+-var about_desc = ['производим мебель для офисов любых площадей и предназначения', 'срок изготовления заказа 13 банковских дней, на складскую коллекцию 3-5 дней', 'мы предлагаем дизайн–проекты интерьера, разработанные с учетом особенностей вашего офиса и компании'];
+section.about
+
+    .title_section
+        p.title О компании
+        span.title__opacity О компании
+    .container
+        .row
+            .col-12.col-sm-12.col-md-5.col-xl-4.left_col
+                p Создание статуса и репутации компании начинается с организации офисного пространства, в котором комфортно не только персоналу, но и посетителям. Грамотно подобранная мебель для офиса является важной имиджевой составляющей.
+                p Компания Pro – Trade поможет Вам соответствовать ожиданиям клиента и требованиям современного делового мира. Офисная мебель в Минске представлена многообразием моделей, мы предлагаем вам лучшие решения для вашего офиса.
+                a.btn_default_nobg(href="#") Подробнее о компании
+
+            .col-12.col-sm-12.col-md-7.col-xl-8.right_col
+                -for(var ii =0;ii<=2;ii++)
+                   .item
+                        .img
+                            img(src="img/about_"+ii+".png")
+                        .desc
+                            p.a_title=about_title[ii]
+                            p=about_desc[ii]
+section.preimuschestva
+    .container
+        .row
+            .col-12.col-sm-12.col-md-6.col-xl-4.pr_item
+                .image_block
+                    img(src="img/pr_1.png")
+                .desc_block являемся победителем Международного<br> фестиваля-конкурса «Выбор года» в<br> номинации <strong>Офисная мебель №1</strong>
+
+            .col-12.col-sm-12.col-md-6.col-xl-4.pr_item
+                .image_block
+                    img(src="img/pr_2.png")
+                .desc_block Дипломированный участник <strong>Минского мебельного салона</strong>
+            .col-12.col-sm-12.col-md-6.col-xl-4.pr_item
+                .image_block
+                    img(src="img/pr_3.png")
+                .desc_block Дипломированный участник <br>Международной специализированной<br> московской выставки-ярмарки <strong>Евроэкспомебель</strong>
+
+
+section.portfolio
+    .title_section
+        p.title Примеры работ
+        span.title__opacity Примеры работ
+    .portfolio_slider
+        -for(var t = 0;t<=10;t++)
+            .portfolio_slider_item
+                a.item_bg(href="#" style="background-image:url(img/cat_1.png)")
+                    .slider_item_name г. Минск, оформление кабинета руководителя EPAM
+    .col-12.text-center.mt-4.pt-3
+        a.btn_default_nobg(href="#") смотреть все примеры работ
+
+section.clients
+    .title_section
+        p.title Наши клиенты
+        span.title__opacity Наши клиенты
+    .container
+        .row.clients_slider
+            -for(var c = 1;c<=10;c++)
+                .col-12.col-sm-6.col-md-3.col-xl-3.item
+                    .img
+                        img(src="img/cl_"+c+".png")
+
+
+
+
+
+
+
+
+
+

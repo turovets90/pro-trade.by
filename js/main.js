@@ -54,6 +54,82 @@ $(document).ready(function(){
 
 
 
+    if($('.portfolio_slider > div').length > 3){
+        $('.portfolio_slider').slick({
+            dots: false,
+            arrows: true,
+            slidesToShow:5,
+            slidesToScroll: 1,
+            //centerMode:true,
+            //focusOnSelect: true,
+            centerPadding: '0',
+            responsive: [
+
+                {
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+    }else if($(window).innerWidth() < 768 && $('.portfolio_slider > div').length > 1){
+        $('.portfolio_slider').slick({
+            dots: false,
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    }
+
+
+
+
+    if($('.clients_slider > div').length > 3){
+        $('.clients_slider').slick({
+            dots: false,
+            arrows: true,
+            slidesToShow:4,
+            slidesToScroll: 1,
+            responsive: [
+
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 575,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+    }else if($(window).innerWidth() < 575 && $('.clients_slider > div').length > 1){
+        $('.clients_slider').slick({
+            dots: false,
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    }
+
+
+
 
 
 
