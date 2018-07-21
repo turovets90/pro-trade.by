@@ -129,6 +129,17 @@ $(document).ready(function(){
     }
 
 
+    var header_height = $('header').height();
+    $('header').next().css({'margin-top': header_height+'px'});
+    //var h_row_1_height = $('.h_row_1').height();
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > header_height) {
+            $('header').addClass('fixed');
+        } else {
+            $('header').removeClass('fixed');
+        }
+    });
+
 
 
 
