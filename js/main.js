@@ -60,9 +60,6 @@ $(document).ready(function(){
             arrows: true,
             slidesToShow:5,
             slidesToScroll: 1,
-            //centerMode:true,
-            //focusOnSelect: true,
-            centerPadding: '0',
             responsive: [
 
                 {
@@ -131,7 +128,6 @@ $(document).ready(function(){
 
     var header_height = $('header').height();
     $('header').next().css({'margin-top': header_height+'px'});
-    //var h_row_1_height = $('.h_row_1').height();
     $(window).scroll(function(){
         if ($(this).scrollTop() > header_height) {
             $('header').addClass('fixed');
@@ -139,6 +135,35 @@ $(document).ready(function(){
             $('header').removeClass('fixed');
         }
     });
+
+
+    $('article.type_review').each(function(){
+        var more = $(this).find('.review_more');
+        var show_more = $(this).find('.show_more span');
+        $(show_more).on('click', function () {
+            if($(more).is(':visible')){
+                $(more).slideUp();
+                $(show_more).text('Читать далее');
+            }else {
+                $(more).slideDown();
+                $(show_more).text('Свернуть');
+            }
+        });
+    });
+
+
+    $('.h_catalog_btn').on('click', function () {
+        $(this).next().slideToggle();
+    });
+
+    $('.c_nav .arrow').click(function(){
+        if($(this).next().is(':visible')){
+            $(this).next().slideUp();
+        }else{
+            $(this).next().slideDown();
+        }
+    });
+
 
 
 

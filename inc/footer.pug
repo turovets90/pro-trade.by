@@ -50,3 +50,93 @@ footer
             .col-12.col-m-12.col-md-6.col-xl-6
                 p.seologic
                     a(href="#") Разработка сайта - Seologic
+
+
+
+.modal.fade#add_review_modal(role="dialog" aria-labelledby="modalLabel" aria-hidden="true")
+    .modal-dialog.modal-lg
+        .modal-content
+            button.close(data-dismiss="modal" aria-label="Close")
+            .modal-body
+                p.title Оставить отзыв
+                form.modal_form
+                    .row
+                        .col-12.col-sm-12.col-md-6
+                            .row
+                                .col-12.field
+                                    label Ваше имя<i>*</i>
+                                    input.form-control(type="text")
+                                .col-12.field
+                                    label Телефон<i>*</i>
+                                    input.form-control(type="text")
+                                .col-12.field
+                                    label E-mail<i>*</i>
+                                    input.form-control(type="text")
+
+                        .col-12.col-sm-12.col-md-6
+                            .row
+                                .col-12.field
+                                    label Текст отзыва<i>*</i>
+                                    textarea.form-control
+                                .col-12.field.rating_field
+                                    label Рейтинг отзыва<i>*</i>
+                                    #reviewStars-input
+                                        input(type="radio" name="stars" id="star-4")
+                                        label(title="gorgeous" for="star-4")
+                                        input(type="radio" name="stars" id="star-3")
+                                        label(title="good" for="star-3")
+                                        input(type="radio" name="stars" id="star-2")
+                                        label(title="regular" for="star-2")
+                                        input(type="radio" name="stars" id="star-1")
+                                        label(title="poor" for="star-1")
+                                        input(type="radio" name="stars" id="star-0")
+                                        label(title="bad" for="star-0")
+                        .col-12.btn_block
+                            button.btn_default(type="submit") отправить
+
+
+.modal.fade#feedback(role="dialog" aria-labelledby="modalLabel" aria-hidden="true")
+    .modal-dialog.modal-lg
+        .modal-content
+            button.close(data-dismiss="modal" aria-label="Close")
+            .modal-body
+                p.title Заказать консультацию<br> по телефону
+                form.modal_form
+                    .row
+                        .col-12.col-sm-12.col-md-6.field
+                            label Ваше имя<i>*</i>
+                            input.form-control(type="text")
+                        .col-12.col-sm-12.col-md-6.field
+                            label E-mail<i>*</i>
+                            input.form-control(type="text")
+                        .col-12.col-sm-12.col-md-6.field
+                            label Организация<i>*</i>
+                            input.form-control(type="text")
+                        .col-12.col-sm-12.col-md-6.field
+                            label Телефон<i>*</i>
+                            input.form-control(type="text")
+                        .col-12.col-sm-12.col-md-12.col-xl-6
+                            .row
+                                .col-12.field
+                                    label Город<i>*</i>
+                                    input.form-control(type="text")
+                                .col-12.field
+                                    label Удобное время<i>*</i>
+                                    .row
+                                        .col-12.col-sm-6
+                                            .time_field
+                                                span с
+                                                input.form-control(type="text")
+                                        .col-12.col-sm-6
+                                            .time_field
+                                                span до
+                                                input.form-control(type="text")
+
+                        .col-12.col-sm-12.col-md-12.col-xl-6
+                            .row
+                                .col-12.field
+                                    label Комментарий
+                                    textarea.form-control
+                                .col-12.field.rating_field
+                        .col-12.btn_block
+                            button.btn_default(type="submit") отправить

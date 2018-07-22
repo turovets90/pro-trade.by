@@ -1,0 +1,37 @@
+section.page_content
+    .container
+        ul.breadcrumb
+            li.breadcrumb-item
+                a(href="#") Главная
+            li.breadcrumb-item
+                a(href="#") О компании
+            li.breadcrumb-item
+                a(href="#content") #{page.title}
+        h1 #{page.title}
+        .content
+            p Pro-Trade стремится к диалогу со своими клиентами и партнерами. Именно поэтому мы создали раздел, где Вы можете оставить свои отзывы и пожелания, предложить новые идеи. Ваше мнение очень важно для нас.
+            button.add_review(data-toggle="modal" data-target="#add_review_modal") ОСТАВИТЬ ОТЗЫВ
+            .row.comments_list
+                -for(var i=1;i<=12;i++)
+                    .col-12.col-sm-12.col-md-6.col-xl-6
+                        article.type_review
+                            .review_head Автор: Председатель правления ЖСПК "Областной" С.И.Родионова
+                            .review_body
+                                .row
+                                    .col-6
+                                        .reviews_rating
+                                            span.star
+                                            span.star
+                                            span.star
+                                            span.star
+                                            span.star-empty
+
+                                    .col-6.date 11 Сент 2018
+                                .review_text Выражаем искреннюю благодарность компании "Pro-Trade" за высокопрофессиональную работу Ваших специалистов на разных уровнях, качество продукции и небезразличное отношение к своим клиентам. В частности хотелось бы отметить работу специалиста отдела продаж Марии Лухтановой. В течение 20 минут после нашего звонка ...
+                                .review_more качество продукции и небезразличное отношение к своим клиентам. В частности хотелось бы отметить работу специалиста отдела продаж Марии Лухтановой. В течение 20 минут после нашего звонка
+                                p.show_more
+                                    span Читать далее
+
+            .row
+                .col-12.text-center
+                    button.load_more Загрузить еще
