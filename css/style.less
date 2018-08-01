@@ -2105,23 +2105,34 @@ article.type_news{
     }
     @media (max-width:767px){
       height: 250px;
+      background-position: center top;
     }
     @media (max-width:575px){
       height: 200px;
     }
 
     + div{
-      padding: 15px 20px 30px;
+      padding: 8px 20px 30px;
       @media (max-width:1200px){
-        padding: 10px 15px 20px;
+        padding: 8px 15px 20px;
       }
     }
   }
 
+
+  .desc{
+    line-height: 1.4;
+    margin-bottom: 25px;
+    @media (max-width:767px){
+      margin-bottom: 15px;
+    }
+  }
+
+
   .date{
     color: #888888;
     font: 16px @PragmaticaCTT_bold;
-    .transition(@transition_default);margin-bottom: 15px;
+    .transition(@transition_default);margin-bottom: 10px;
     @media (max-width:1200px){
       font: 14px @PragmaticaCTT_bold;
     }
@@ -2277,7 +2288,7 @@ article.type_review{
 
   .review_text, .review_more{
     font: 16px @PragmaticaCTT;
-    line-height: 1.3;
+    line-height: 1.4;
     @media (max-width:991px){
       font: 14px @PragmaticaCTT;
     }
@@ -2706,3 +2717,76 @@ header{
   }
 }
 
+
+
+.page_content{
+  .content{
+    line-height: 1.9;
+  }
+}
+
+
+.serv_list{
+  margin-top: 50px;
+  @media (max-width:767px){
+    margin-top: 30px;
+  }
+  .s_item{
+    &:hover, &:focus{
+      text-decoration: none;
+      .d_flex_container{
+        .box-shadow(0 5px 30px 0 rgba(0, 0, 0, 0.3));
+      }
+    }
+    margin-bottom: 30px;
+    @media (max-width:767px){
+      margin-bottom: 20px;
+    }
+
+    .d_flex_container{
+      .flex();
+       .box-shadow(0 5px 20px 0 rgba(0, 0, 0, 0.15));
+        width: 100%;
+      padding: 20px 35px 20px 0;
+      .transition(@transition_default);
+      @media (max-width:1200px){
+        padding: 20px 20px 20px 0;
+      }
+
+      .img{
+        min-width: 35%;
+        text-align: center;
+        @media (max-width:767px){
+          min-width: 30%;
+        }
+        img{
+          max-width: 120px;
+          @media (max-width:767px){
+            max-width: 70%;
+          }
+        }
+      }
+      .serv_name{
+        color: #333;
+        font: 18px @PragmaticaCTT_bold;
+        .flex();
+        .ai-center();
+        line-height: 1.4;
+        @media (max-width:1200px){
+          font: 16px @PragmaticaCTT_bold;
+        }
+        @media (max-width:767px){
+          font: 14px @PragmaticaCTT_bold;
+        }
+      }
+    }
+  }
+}
+
+
+.news_list{
+  margin-top: 50px;
+  @media (max-width:767px){
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,23 @@
+section.page_content
+    .container
+        ul.breadcrumb
+            li.breadcrumb-item
+                a(href="#") Главная
+            li.breadcrumb-item
+                a(href="#content") #{page.title}
+        h1 #{page.title}
+        .content
+            p Наша продукция декларирована в соответствии с международными стандартам EAC. Уделяя особое внимание качеству, мы используем только экологические чистые материалы для производства мебели на высокотехнологичном оборудовании. Таким образом, продукция фабрики хорошо зарекомендовала себя на рынках Беларуси, России, Польши, Литвы, Латвии, Эстонии, Казахстана, Азербайджана, Грузии и Молдавии.
+            .row.news_list
+                -for(var i=1;i<=12;i++)
+                    .col-12.col-sm-6.col-md-6.col-xl-4
+                        article.type_news
+                            a.thumbnail(href="#" style="background-image:url(img/news_1.png)")
+                            div
+                                p.post_title.mb-3 Как выбрать офисную мебель?
+                                .desc В этом материале Вы найдёте советы по выбору мебели для офиса.
+                                a.more(href="#") Подробнее
+            .row
+                .col-12.text-center
+                    button.load_more Загрузить еще
+
