@@ -1,0 +1,47 @@
+section.page_content
+    .container
+        ul.breadcrumb
+            li.breadcrumb-item
+                a(href="#") Главная
+            li.breadcrumb-item
+                a(href="#content") #{page.title}
+        h1 #{page.title}
+        .content
+            .product_container
+                .row
+                    .col-12.col-sm-12.col-md-7.col-xl-8
+                        .product_slider
+                            -for(var i=1;i<=6;i++)
+                                a.product_slider_item(data-fancybox="product_gallery" href="img/product_img.png" style="background-image:url(img/product_img.png)")
+                        .product_slider_nav
+                            -for(var i=1;i<=6;i++)
+                                div
+                                    .product_slider_nav_item(style="background-image:url(img/product_img.png)")
+                    .col-12.col-sm-12.col-md-5.col-xl-4
+                        .colors_container
+                            p.title Цветовые решения
+                            .colors_section
+                                p Основные цвета:
+                                .row.colors_list
+                                    -for(var i_1 =1;i_1<=5;i_1++)
+                                        .col-6.col-sm-4.col-md-4.col-xl-4
+                                            .color_item
+                                                .color_img(style="background-image:url(img/color.png)")
+                                                .color_name дуб феррара светлый
+
+                            .colors_section
+                                p Акцентные цвета:
+                                .row.colors_list
+                                    -for(var i_1 =1;i_1<=3;i_1++)
+                                        .col-6.col-sm-4.col-md-4.col-xl-4
+                                            .color_item
+                                                .color_img(style="background-image:url(img/color.png)")
+                                                .color_name дуб феррара светлый
+                            .colors_section
+                                p Дополнительные цвета:
+                                .row.colors_list
+                                    -for(var i_1 =1;i_1<=4;i_1++)
+                                        .col-6.col-sm-4.col-md-4.col-xl-4
+                                            .color_item
+                                                .color_img(style="background-image:url(img/color.png)")
+                                                .color_name дуб феррара светлый
