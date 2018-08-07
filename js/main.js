@@ -194,8 +194,24 @@ $(document).ready(function(){
 
 
 
+    $('.tab-pane').each(function(){
+        var more = $(this).find('.more');
+        var show_more = $(this).find('.show_more span');
+        $(show_more).on('click', function(){
+            if($(more).is(':visible')){
+                $(more).slideUp();
+                $(show_more).text('Показать все');
+            }else{
+                $(more).slideDown();
+                $(show_more).text('Свернуть');
+            }
+        });
+    });
 
 
+
+
+    $('.js-example-basic-single').select2();
 
 
 
