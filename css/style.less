@@ -259,6 +259,36 @@ body{
   }
 }
 
+
+strong, b, .bold{
+  font-family: @PragmaticaCTT_bold;
+}
+
+
+.content{
+  ul{
+    padding-left: 0;
+      li{
+        list-style: none;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 18px;
+        &:before{
+          .b_a();
+          width: 8px;
+          height: 8px;
+          background: #DD2A1B;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+    }
+
+  }
+
+}
+
 .logo_block{
     text-align: center;
   @media (max-width:1200px){
@@ -2099,12 +2129,13 @@ header{
 
 
 article.type_news{
-  .box-shadow(0 0 15px 0 rgba(0, 0, 0, 0.15));
+  .box-shadow(0 0 29px 0 rgba(0, 0, 0, 0.15));
   margin-bottom: 30px;
   .transition(@transition_default);
 
+
   &:hover{
-    .box-shadow(0 0 25px 0 rgba(0, 0, 0, 0.4));
+    .box-shadow(0 0 29px 0 rgba(0, 0, 0, 0.3));
     .date{
       color: #333;
     }
@@ -2981,6 +3012,7 @@ header{
   margin: 0;
   .nav-item{
     border-bottom: 1px solid #CCCCCC;
+    list-style: none;
     @media (max-width:767px){
     margin-bottom: 10px;
       border-bottom: 0;
@@ -3493,3 +3525,180 @@ header{
     margin-top: 20px;
   }
 }
+
+article.type_series{
+  .box-shadow(0 0 29px 0 rgba(0, 0, 0, 0.15));
+  margin-bottom: 30px;
+  .transition(@transition_default);
+
+  &:hover{
+    .box-shadow(0 0 29px 0 rgba(0, 0, 0, 0.3));
+  }
+
+  .right_col{
+    padding-bottom: 30px;
+    @media (max-width:1200px){
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  .thumbnail{
+    width: 100%;
+    min-height: 410px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    @media (max-width:1200px){
+      min-height: 350px;
+    }
+    @media (max-width:767px){
+      min-height: 300px;
+    }
+    @media (max-width:575px){
+      min-height: 250px;
+    }
+  }
+
+  .s_title{
+    font: 24px @PragmaticaCTT_bold;
+    margin-top: 25px;
+  }
+
+  .colors{
+    .flex();
+    .ai-center();
+    @media (max-width:575px){
+        .col();
+      .ai-start();
+      padding-left: 0;
+    }
+
+    p{
+      font: 18px @PragmaticaCTT;
+      margin-right: 20px;
+      margin-bottom: 0;
+      @media (max-width:575px){
+        margin-bottom:10px;
+      }
+    }
+
+    .colors_row{
+      .flex();
+        .color{
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          background-size: cover;
+          background-position: center;
+          border:1px solid #181818;
+          .border-radius(50%);
+          margin-right:20px;
+        }
+    }
+  }
+
+  .product_list{
+  border-bottom: 2px solid #EEEEEE;
+    margin-top: 0;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+
+    > .row{
+      > div{
+        @media (min-width:1400px){
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+          max-width: 25%;
+        }
+      }
+    }
+
+    .item{
+      display: inline-block;line-height: 1.2;
+      &:hover{
+        text-decoration: none;
+      }
+
+      img{
+        max-height: 100px;
+      }
+
+      span{
+        display: block;
+        color: #333;
+        font-size: 16px;
+
+      }
+    }
+  }
+
+  .more{
+    display: inline-block;
+    color: @red_default;
+    border:1px solid @red_default;
+    font: 14px @PragmaticaCTT_bold;
+    text-transform: uppercase;padding: 10px 25px;
+    &:hover, &:focus{
+      text-decoration: none;
+      color: #333;
+      border:1px solid #333;
+    }
+  }
+
+}
+
+
+
+.gallery_item{
+  position: relative;
+  display: inline-block;
+  .box-shadow(0 0 29px 0 rgba(0, 0, 0, 0.15));
+  margin-bottom: 30px;
+
+  &:focus{
+    outline: none;
+  }
+
+  &:hover{
+    &:before, &:after{
+      opacity: 1;
+    }
+  }
+
+  img{
+    max-height: 300px;
+  }
+
+  &:before{
+    .b_a();
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.51);
+    .transition(@transition_default);
+    opacity: 0;
+  }
+  &:after{
+    .b_a();
+    background: url(../img/zoom-in.png);
+    width: 61px;
+    height: 63px;
+    .m_a();
+    .transition(@transition_default);
+    opacity: 0;
+    @media (max-width:767px){
+      width:41px;
+      height: 43px;
+      background-size: cover;
+    }
+  }
+}
+
+
+
+
+

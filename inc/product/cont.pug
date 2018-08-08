@@ -6,63 +6,120 @@ section.page_content
             li.breadcrumb-item
                 a(href="#content") #{page.title}
         h1 #{page.title}
-        .content
-            .product_container
-                .row
-                    .col-12.col-sm-12.col-md-7.col-xl-8
-                        .product_slider
-                            -for(var i=1;i<=6;i++)
-                                a.product_slider_item(data-fancybox="product_gallery" href="img/product_img.png" style="background-image:url(img/product_img.png)")
-                        .product_slider_nav
-                            -for(var i=1;i<=6;i++)
-                                div
-                                    .product_slider_nav_item(style="background-image:url(img/product_img.png)")
-                    .col-12.col-sm-12.col-md-5.col-xl-4
-                        .colors_container
-                            p.title Цветовые решения
-                            .colors_section
-                                p Основные цвета:
-                                .row.colors_list
-                                    -for(var i_1 =1;i_1<=5;i_1++)
-                                        .col-6.col-sm-4.col-md-4.col-xl-4
-                                            .color_item
-                                                .color_img(style="background-image:url(img/color.png)")
-                                                .color_name дуб феррара светлый
+        .product_container
+            .row
+                .col-12.col-sm-12.col-md-7.col-xl-8
+                    .product_slider
+                        -for(var i=1;i<=6;i++)
+                            a.product_slider_item(data-fancybox="product_gallery" href="img/product_img.png" style="background-image:url(img/product_img.png)")
+                    .product_slider_nav
+                        -for(var i=1;i<=6;i++)
+                            div
+                                .product_slider_nav_item(style="background-image:url(img/product_img.png)")
+                .col-12.col-sm-12.col-md-5.col-xl-4
+                    .colors_container
+                        p.title Цветовые решения
+                        .colors_section
+                            p Основные цвета:
+                            .row.colors_list
+                                -for(var i_1 =1;i_1<=5;i_1++)
+                                    .col-6.col-sm-4.col-md-4.col-xl-4
+                                        .color_item
+                                            .color_img(style="background-image:url(img/color.png)")
+                                            .color_name дуб феррара светлый
 
-                            .colors_section
-                                p Акцентные цвета:
-                                .row.colors_list
-                                    -for(var i_1 =1;i_1<=3;i_1++)
-                                        .col-6.col-sm-4.col-md-4.col-xl-4
-                                            .color_item
-                                                .color_img(style="background-image:url(img/color.png)")
-                                                .color_name дуб феррара светлый
-                            .colors_section
-                                p Дополнительные цвета:
-                                .row.colors_list
-                                    -for(var i_1 =1;i_1<=4;i_1++)
-                                        .col-6.col-sm-4.col-md-4.col-xl-4
-                                            .color_item
-                                                .color_img(style="background-image:url(img/color.png)")
-                                                .color_name дуб феррара светлый
+                        .colors_section
+                            p Акцентные цвета:
+                            .row.colors_list
+                                -for(var i_1 =1;i_1<=3;i_1++)
+                                    .col-6.col-sm-4.col-md-4.col-xl-4
+                                        .color_item
+                                            .color_img(style="background-image:url(img/color.png)")
+                                            .color_name дуб феррара светлый
+                        .colors_section
+                            p Дополнительные цвета:
+                            .row.colors_list
+                                -for(var i_1 =1;i_1<=4;i_1++)
+                                    .col-6.col-sm-4.col-md-4.col-xl-4
+                                        .color_item
+                                            .color_img(style="background-image:url(img/color.png)")
+                                            .color_name дуб феррара светлый
 
-            .product_desc_container
-                ul.row.nav.nav-tabs_product(role="tablist")
-                    li.col-12.col-sm-6.col-md-3.col-xl-3.nav-item
-                        a.nav-link.active(href="#description" id="desc_link" role="tab" data-toggle="tab" aria-controls="des-link") Описание
+        .product_desc_container
+            ul.row.nav.nav-tabs_product(role="tablist")
+                li.col-12.col-sm-6.col-md-3.col-xl-3.nav-item
+                    a.nav-link.active(href="#description" id="desc_link" role="tab" data-toggle="tab" aria-controls="des-link") Описание
 
-                    li.col-12.col-sm-6.col-md-3.col-xl-3.nav-item
-                        a.nav-link(href="#colors" id="colors_link" role="tab" data-toggle="tab" aria-controls="colors-link") Цветовые решения
+                li.col-12.col-sm-6.col-md-3.col-xl-3.nav-item
+                    a.nav-link(href="#colors" id="colors_link" role="tab" data-toggle="tab" aria-controls="colors-link") Цветовые решения
 
-                    li.col-12.col-sm-6.col-md-3.col-xl-3.nav-item
-                        a.nav-link(href="#characteristics" id="characteristics_link" role="tab" data-toggle="tab" aria-controls="characteristics-link" aria-expanded="true") Технические характеристики
+                li.col-12.col-sm-6.col-md-3.col-xl-3.nav-item
+                    a.nav-link(href="#characteristics" id="characteristics_link" role="tab" data-toggle="tab" aria-controls="characteristics-link" aria-expanded="true") Технические характеристики
 
-                    li.col-12.col-sm-6.col-md-3.col-xl-3.nav-item
-                        a.nav-link(href="#works" id="works_link" role="tab" data-toggle="tab" aria-controls="works-link") Примеры работ
+                li.col-12.col-sm-6.col-md-3.col-xl-3.nav-item
+                    a.nav-link(href="#works" id="works_link" role="tab" data-toggle="tab" aria-controls="works-link") Примеры работ
 
-                .tab-content.tab-content_product
-                    #description.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="des-link")
+            .tab-content.tab-content_product
+                #description.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="des-link")
+                    p Офис современной компании представляет собой сложное и многофункциональное помещение. Планировка, разбивка на рабочие зоны, а также подбор и приобретение мебели для офиса - довольно ответственные задачи. И то, насколько серьезно вы к ним подойдете, влияет на эффективность труда ваших подчиненных. Ведь от комфорта и удобства рабочего места напрямую зависит настроение ваших сотрудников, а значит и их желание принести как можно больше пользы для компании.
+
+                    p Предприятие «Pro-Trade» специализируется на производстве и реализации высококачественной мебели для офиса. Наша продукция соответствует самым высоким требованиям клиентов.
+                    .more
                         p Офис современной компании представляет собой сложное и многофункциональное помещение. Планировка, разбивка на рабочие зоны, а также подбор и приобретение мебели для офиса - довольно ответственные задачи. И то, насколько серьезно вы к ним подойдете, влияет на эффективность труда ваших подчиненных. Ведь от комфорта и удобства рабочего места напрямую зависит настроение ваших сотрудников, а значит и их желание принести как можно больше пользы для компании.
+
+                            p Предприятие «Pro-Trade» специализируется на производстве и реализации высококачественной мебели для офиса. Наша продукция соответствует самым высоким требованиям клиентов.
+                    p.show_more
+                        span Показать все
+
+                #colors.tab-pane.fade(role="tabpanel" aria-labelledby="colors-link")
+                    .row.colors_list
+                        -for(var i_1 =1;i_1<=8;i_1++)
+                            .col-6.col-sm-4.col-md-3.col-xl-2
+                                .color_item
+                                    .color_img(style="background-image:url(img/color.png)")
+                                    .color_name дуб феррара светлый
+                #characteristics.tab-pane.fade(role="tabpanel" aria-labelledby="characteristics-link")
+                    <div class="table_default">
+                    <table>
+                    <thead>
+                    <tr>
+                    <th>Заголовок</th>
+                    <th>Заголовок</th>
+                    <th>Заголовок</th>
+                    <th>Заголовок</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td>Значение</td>
+                    <td>Значение</td>
+                    <td>Значение</td>
+                    <td>Значение</td>
+                    </tr>
+                    <tr>
+                    <td>Значение</td>
+                    <td>Значение</td>
+                    <td>Значение</td>
+                    <td>Значение</td>
+                    </tr>
+                    <tr>
+                    <td>Значение</td>
+                    <td>Значение</td>
+                    <td>Значение</td>
+                    <td>Значение</td>
+                    </tr>
+                    <tr>
+                    <td>Значение</td>
+                    <td>Значение</td>
+                    <td>Значение</td>
+                    <td>Значение</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    </div>
+
+                #works.tab-pane.fade(role="tabpanel" aria-labelledby="works-link")
+                    p Офис современной компании представляет собой сложное и многофункциональное помещение. Планировка, разбивка на рабочие зоны, а также подбор и приобретение мебели для офиса - довольно ответственные задачи. И то, насколько серьезно вы к ним подойдете, влияет на эффективность труда ваших подчиненных. Ведь от комфорта и удобства рабочего места напрямую зависит настроение ваших сотрудников, а значит и их желание принести как можно больше пользы для компании.
 
                         p Предприятие «Pro-Trade» специализируется на производстве и реализации высококачественной мебели для офиса. Наша продукция соответствует самым высоким требованиям клиентов.
                         .more
@@ -72,161 +129,103 @@ section.page_content
                         p.show_more
                             span Показать все
 
-                    #colors.tab-pane.fade(role="tabpanel" aria-labelledby="colors-link")
-                        .row.colors_list
-                            -for(var i_1 =1;i_1<=8;i_1++)
-                                .col-6.col-sm-4.col-md-3.col-xl-2
-                                    .color_item
-                                        .color_img(style="background-image:url(img/color.png)")
-                                        .color_name дуб феррара светлый
-                    #characteristics.tab-pane.fade(role="tabpanel" aria-labelledby="characteristics-link")
-                        <div class="table_default">
-                        <table>
-                        <thead>
-                        <tr>
-                        <th>Заголовок</th>
-                        <th>Заголовок</th>
-                        <th>Заголовок</th>
-                        <th>Заголовок</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                        <td>Значение</td>
-                        <td>Значение</td>
-                        <td>Значение</td>
-                        <td>Значение</td>
-                        </tr>
-                        <tr>
-                        <td>Значение</td>
-                        <td>Значение</td>
-                        <td>Значение</td>
-                        <td>Значение</td>
-                        </tr>
-                        <tr>
-                        <td>Значение</td>
-                        <td>Значение</td>
-                        <td>Значение</td>
-                        <td>Значение</td>
-                        </tr>
-                        <tr>
-                        <td>Значение</td>
-                        <td>Значение</td>
-                        <td>Значение</td>
-                        <td>Значение</td>
-                        </tr>
-                        </tbody>
-                        </table>
-                        </div>
-
-                    #works.tab-pane.fade(role="tabpanel" aria-labelledby="works-link")
-                        p Офис современной компании представляет собой сложное и многофункциональное помещение. Планировка, разбивка на рабочие зоны, а также подбор и приобретение мебели для офиса - довольно ответственные задачи. И то, насколько серьезно вы к ним подойдете, влияет на эффективность труда ваших подчиненных. Ведь от комфорта и удобства рабочего места напрямую зависит настроение ваших сотрудников, а значит и их желание принести как можно больше пользы для компании.
-
-                            p Предприятие «Pro-Trade» специализируется на производстве и реализации высококачественной мебели для офиса. Наша продукция соответствует самым высоким требованиям клиентов.
-                            .more
-                                p Офис современной компании представляет собой сложное и многофункциональное помещение. Планировка, разбивка на рабочие зоны, а также подбор и приобретение мебели для офиса - довольно ответственные задачи. И то, насколько серьезно вы к ним подойдете, влияет на эффективность труда ваших подчиненных. Ведь от комфорта и удобства рабочего места напрямую зависит настроение ваших сотрудников, а значит и их желание принести как можно больше пользы для компании.
-
-                                    p Предприятие «Pro-Trade» специализируется на производстве и реализации высококачественной мебели для офиса. Наша продукция соответствует самым высоким требованиям клиентов.
-                            p.show_more
-                                span Показать все
 
 
 
+        .filters_container
+            p.f_title Фильтр по товарам
+            .row
+                .col-12.col-sm-12.col-md-12.col-xl-6
+                    p.f_group_title Тип изделия:
+                    .row
+                        .col-12.col-sm-6.col-md-4.col-xl-4
+                            span.type_checkbox
+                                input.checkbox(type="checkbox" id="checkbox-1")
+                                label(for="checkbox-1") Стол
+                            span.type_checkbox
+                                input.checkbox(type="checkbox" id="checkbox-2")
+                                label(for="checkbox-2") Шкаф
+                        .col-12.col-sm-6.col-md-4.col-xl-4
+                            span.type_checkbox
+                                input.checkbox(type="checkbox" id="checkbox-3")
+                                label(for="checkbox-3") Тумба
+                            span.type_checkbox
+                                input.checkbox(type="checkbox" id="checkbox-4")
+                                label(for="checkbox-4") Доп. элменты
+                        .col-12.col-sm-6.col-md-4.col-xl-4
+                            span.type_checkbox
+                                input.checkbox(type="checkbox" id="checkbox-5")
+                                label(for="checkbox-5") Стеклянные двери
+                            span.type_checkbox
+                                input.checkbox(type="checkbox" id="checkbox-6")
+                                label(for="checkbox-6") Тумба
+                .col-12.col-sm-12.col-md-12.col-xl-6
+                    p.f_group_title Стоимость, руб.:
 
-            .filters_container
-                p.f_title Фильтр по товарам
-                .row
-                    .col-12.col-sm-12.col-md-12.col-xl-6
-                        p.f_group_title Тип изделия:
-                        .row
-                            .col-12.col-sm-6.col-md-4.col-xl-4
-                                span.type_checkbox
-                                    input.checkbox(type="checkbox" id="checkbox-1")
-                                    label(for="checkbox-1") Стол
-                                span.type_checkbox
-                                    input.checkbox(type="checkbox" id="checkbox-2")
-                                    label(for="checkbox-2") Шкаф
-                            .col-12.col-sm-6.col-md-4.col-xl-4
-                                span.type_checkbox
-                                    input.checkbox(type="checkbox" id="checkbox-3")
-                                    label(for="checkbox-3") Тумба
-                                span.type_checkbox
-                                    input.checkbox(type="checkbox" id="checkbox-4")
-                                    label(for="checkbox-4") Доп. элменты
-                            .col-12.col-sm-6.col-md-4.col-xl-4
-                                span.type_checkbox
-                                    input.checkbox(type="checkbox" id="checkbox-5")
-                                    label(for="checkbox-5") Стеклянные двери
-                                span.type_checkbox
-                                    input.checkbox(type="checkbox" id="checkbox-6")
-                                    label(for="checkbox-6") Тумба
-                    .col-12.col-sm-12.col-md-12.col-xl-6
-                        p.f_group_title Стоимость, руб.:
-
-                        p Здесь будет диапазон цен, стандартный, кнопки "применить" и "сбросить"
-                            a(href="http://prntscr.com/kfr82z" target="_blank") http://prntscr.com/kfr82z
-
-
-            .sort_block
-                .row
-                    .col-12.d-flex.align-items-center.flex-wrap
-                        p Сортировка:
-                        span.select
-                            select.js-example-basic-single
-                                option(value="") По убыванию цены
-                                option(value="") По возрастанию цены
-                                option(value="") Наименование (А -> Я)
-                                option(value="") Наименование (Я -> А)
+                    p Здесь будет диапазон цен, стандартный, кнопки "применить" и "сбросить"
+                        a(href="http://prntscr.com/kfr82z" target="_blank") http://prntscr.com/kfr82z
 
 
+        .sort_block
+            .row
+                .col-12.d-flex.align-items-center.flex-wrap
+                    p Сортировка:
+                    span.select
+                        select.js-example-basic-single
+                            option(value="") По убыванию цены
+                            option(value="") По возрастанию цены
+                            option(value="") Наименование (А -> Я)
+                            option(value="") Наименование (Я -> А)
+
+
+        .row.product_list
+            -for(var i=0;i<=9;i++)
+                .col-12.col-sm-6.col-md-4.col-xl-3
+                    .product_item_container
+                        .product_item
+                            a.link_img(href="#")
+                                img(src="img/product_2.png")
+                            a.product_name(href="#") Стол для заседаний 180х90х74,8
+                            .series Серия “Яппи”
+                            .price 1 010 руб.
+                            .hover_visible
+                                button.add_to_cart добавить в корзину
+                                a.by_one_click(href="#cost" data-toggle='modal') Купить в один клик
+
+
+        .pagination_block
+            .row
+                .col-12.col-sm-12.col-md-12.col-xl-6
+                    nav
+                        ul.pagination
+                            li.page-item
+                                a(href="#" class="page-link" aria-label="Previous")
+                                    span(aria-hidden="true") <
+                            li.page-item
+                                a(href="#" class="page-link active") 1
+                            li.page-item
+                                a(href="#" class="page-link") 2
+                            li.page-item
+                                a(href="#" class="page-link") 3
+                            li.page-item.empty
+                                span ...
+                            li.page-item
+                                a(href="#" class="page-link") 7
+                            li.page-item
+                                a(href="#" class="page-link" aria-label="Next")
+                                    span(aria-hidden="true") >
+                .col-12.col-sm-12.col-md-12.col-xl-6.displaying_pages.align-self-center Показано с 1 по 15 из 266 (страниц: 18)
+
+        .other_series
+            p.title.h2 Посмотрите другие серии
             .row.product_list
-                -for(var i=0;i<=9;i++)
-                    .col-12.col-sm-6.col-md-4.col-xl-3
+                -for(var i=0;i<=2;i++)
+                    .col-12.col-sm-6.col-md-4.col-xl-4
                         .product_item_container
                             .product_item
                                 a.link_img(href="#")
-                                    img(src="img/product_2.png")
-                                a.product_name(href="#") Стол для заседаний 180х90х74,8
-                                .series Серия “Яппи”
-                                .price 1 010 руб.
-                                .hover_visible
-                                    button.add_to_cart добавить в корзину
-                                    a.by_one_click(href="#cost" data-toggle='modal') Купить в один клик
-
-
-            .pagination_block
-                .row
-                    .col-12.col-sm-12.col-md-12.col-xl-6
-                        nav
-                            ul.pagination
-                                li.page-item
-                                    a(href="#" class="page-link" aria-label="Previous")
-                                        span(aria-hidden="true") <
-                                li.page-item
-                                    a(href="#" class="page-link active") 1
-                                li.page-item
-                                    a(href="#" class="page-link") 2
-                                li.page-item
-                                    a(href="#" class="page-link") 3
-                                li.page-item.empty
-                                    span ...
-                                li.page-item
-                                    a(href="#" class="page-link") 7
-                                li.page-item
-                                    a(href="#" class="page-link" aria-label="Next")
-                                        span(aria-hidden="true") >
-                    .col-12.col-sm-12.col-md-12.col-xl-6.displaying_pages.align-self-center Показано с 1 по 15 из 266 (страниц: 18)
-
-            .other_series
-                p.title.h2 Посмотрите другие серии
-                .row.product_list
-                    -for(var i=0;i<=2;i++)
-                        .col-12.col-sm-6.col-md-4.col-xl-4
-                            .product_item_container
-                                .product_item
-                                    a.link_img(href="#")
-                                        img(src="img/product_3.png")
-                                    a.product_name(href="#") Серия "Советник"
+                                    img(src="img/product_3.png")
+                                a.product_name(href="#") Серия "Советник"
 
 
 

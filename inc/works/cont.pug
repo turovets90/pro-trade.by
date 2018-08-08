@@ -1,0 +1,45 @@
+section.page_content
+    .container
+        ul.breadcrumb
+            li.breadcrumb-item
+                a(href="#") Главная
+            li.breadcrumb-item
+                a(href="#") Примеры работ
+            li.breadcrumb-item
+                a(href="#content") #{page.title}
+        h1 #{page.title}
+        .content
+            .row
+                -for(var i=0;i<=7;i++)
+                    .col-6.col-sm-6.col-md-4.col-xl-3
+                        a(href="img/news.png" class="gallery_item" data-fancybox="gallery")
+                            img(src="img/news.png")
+            h2 Описание проекта
+            p Трудно сказать, что является главным показателем развития компании: команда профессиональных сотрудников, грамотный подход к управлению или финансовые результаты. Однако с уверенностью можно утверждать, что кабинет руководителя – это олицетворение успеха организации и лидерского таланта ее главы. Именно здесь принимаются важные для компании решения и проходит общение с клиентами и партнерами.
+            p Мебель для настоящих руководителей от компании Pro-Trade устанавливает высокую планку качества и комфорта. Её изготовление проходит на современном европейском оборудовании из надежных и экологичных материалов (МДФ, ДСП).
+            p Наша компания гарантирует высочайший уровень производственного контроля сборки и огромное разнообразие ассортимента. Грамотные специалисты помогут выбрать лучшие цветовые и компоновочные решения в зависимости от стиля и личных предпочтений клиента. Мебель для руководителей Pro-Trade можно купить на самых выгодных условиях: мы уверены в качестве нашей работы, и предоставляем гарантию
+        h2 Используемые серии в проекте
+        .row.news_list
+            -for(var i=1;i<=5;i++)
+                .col-12
+                    article.type_series
+                        .row
+                            .col-12.col-sm-12.col-md-12.col-xl-6
+                                a.thumbnail(href="#" style="background-image:url(img/katalog_img.png)")
+                            .col-12.col-sm-12.col-md-12.col-xl-6.right_col
+                                p.s_title Серия "Советник"
+                                .colors
+                                    p Цветовые решения:
+                                    .colors_row
+                                        span.color(style="background-image:url(img/color.png)")
+                                        span.color(style="background-image:url(img/color.png)")
+                                .product_list
+                                    .row
+                                        -for(var i1=0;i1<=3;i1++)
+                                            .col-6.col-sm-4.col-md-3.col-xl-4
+                                                a.item(href="#")
+                                                    img(src="img/product_2.png")
+                                                    span Стол брифинг 180х90х74,8
+
+                                a.more(href="#") Подробнее
+

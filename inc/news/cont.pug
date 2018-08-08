@@ -6,16 +6,15 @@ section.page_content
             li.breadcrumb-item
                 a(href="#content") #{page.title}
         h1 #{page.title}
-        .content
-            .row
-                -for(var i=1;i<=12;i++)
-                    .col-12.col-sm-6.col-md-6.col-xl-4
-                        article.type_news
-                            a.thumbnail(href="#" style="background-image:url(img/news.png)")
-                            div
-                                .date 21.08.2018
-                                p.post_title В Минске, в ТРЦ “GALLERIA” открылся большой салон офисной мебели Pro-Trade!
-                                a.more(href="#") Подробнее
-            .row
-                .col-12.text-center
-                    button.load_more Загрузить еще
+        .row
+            -for(var i=1;i<=12;i++)
+                .col-12.col-sm-6.col-md-6.col-xl-4
+                    article.type_news
+                        a.thumbnail(href="#" style="background-image:url(img/news.png)")
+                        div
+                            .date 21.08.2018
+                            p.post_title В Минске, в ТРЦ “GALLERIA” открылся большой салон офисной мебели Pro-Trade!
+                            a.more(href="#") Подробнее
+        .row
+            .col-12.text-center
+                button.load_more Загрузить еще

@@ -1,0 +1,37 @@
+section.page_content
+    .container
+        ul.breadcrumb
+            li.breadcrumb-item
+                a(href="#") Главная
+            li.breadcrumb-item
+                a(href="#") Каталог
+            li.breadcrumb-item
+                a(href="#content") #{page.title}
+        h1 #{page.title}
+        .product_container
+
+        .product_desc_container
+        h2 Похожие товары
+        .row.product_list
+            -for(var i=0;i<=2;i++)
+                .col-12.col-sm-6.col-md-4.col-xl-3
+                    .product_item_container
+                        .product_item
+                            a.link_img(href="#")
+                                img(src="img/product_2.png")
+                            a.product_name(href="#") Стол для заседаний 180х90х74,8
+                            .series Серия “Яппи”
+                            .price 1 010 руб.
+                            .hover_visible
+                                button.add_to_cart добавить в корзину
+                                a.by_one_click(href="#cost" data-toggle='modal') Купить в один клик
+
+
+
+
+
+
+
+
+
+
