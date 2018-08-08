@@ -9,6 +9,60 @@ section.page_content
                 a(href="#content") #{page.title}
         h1 #{page.title}
         .product_container
+            .product_desc_head
+                .row
+                    .col-12.col-sm-12.col-md-12.col-xl-7.left_col
+                        .product_slider_2
+                            -for(var i=1;i<=6;i++)
+                                a.product_slider_item(data-fancybox="product_gallery" href="img/product_5.png")
+                                    img(src="img/product_5.png")
+                        .product_slider_nav_2
+                            -for(var i=1;i<=6;i++)
+                                div
+                                    .product_slider_nav_item
+                                        img(src="img/product_5.png")
+                    .col-12.col-sm-12.col-md-12.col-xl-5.right_col.content
+                        .price 15 000 руб.
+                        .btn_group
+                            button.add_to_cart в корзину
+                                i
+                            a.by_one_click(href="#" data-toggle='modal') Купить в один клик
+
+                        .guarantee
+                            b Гарантия:
+                            ul
+                                li 12 мес.
+                        .colors
+                            b Цветовые решения:
+                            .colors_row
+                                span.color(style="background-image:url(img/c_1.png)")
+                                span.color(style="background-image:url(img/c_2.png)")
+                                span.color(style="background-image:url(img/c_3.png)")
+                                span.color(style="background-image:url(img/c_1.png)")
+
+
+
+            .product_desc_body.content
+                .row
+                    .col-12.col-sm-12.col-md-12.col-xl-7
+                        p.title Описание товара
+                        p Коллекция мебели "Яппи" разработана для молодых амбициозных и харизматичных руководителей. "Яппи" подходит тем, кто берет ответственность на себя и ориентируется на быструю карьеру. Кабинет "Яппи" - это минимализм и лаконичность, четкая графика и геометрия. Ему присущи масштабность и отсутствие ограничений, смелые контрасты декоров и эко-дизайн.
+                        p В коллекции "Яппи" выделяется эксклюзивный вариант коллекции - "Яппи white".
+                        p Ультрамодное сочетание трендовых декоров - белого глянца и
+                    .col-12.col-sm-12.col-md-12.col-xl-5
+                        p.title Характеристики
+                        ul
+                            li Рабочие поверхности - ДСП 46 мм (28+18 мм)
+                            li Фасады, полки, пол, каркасы стеллажей, задние стенки - 18 мм
+                            li Двери в стеллажах - ДСП 18 мм, стекло графит 4 мм
+                            li Царга - ДСП 18 мм, сталь 2 мм, окраска по каталогу RALкомплектующих.
+                    .col-12
+                        p.title Данные для скачивания
+                        ul
+                            li
+                                a.download(href="#" download) схема сборки .pdf
+                            li
+                                a.download(href="#" download) каталог серии "Яппи" .pdf
 
         .product_desc_container
         h2 Похожие товары
