@@ -205,7 +205,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Карточка товара.html">
+  <component name="RunManager" selected="JavaScript Debug.Главная.html">
     <configuration name="Карточка товара_серия.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Карточка товара_серия.html" />
     <configuration name="Примеры работ_детальная.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Примеры работ_детальная.html" />
     <configuration name="Карточка товара.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Карточка товара.html" />
@@ -215,6 +215,7 @@
     <configuration name="Карточка товара.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Карточка товара.html" />
     <configuration name="Модальное окно.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Модальное окно.html" />
     <configuration name="Каталог.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Каталог.html" />
+    <configuration name="Главная.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Главная.html" />
     <configuration name="Категория.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Категория.html" />
     <configuration name="Услуги.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Услуги.html" />
     <configuration name="Покупателям.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Покупателям.html" />
@@ -224,9 +225,11 @@
       <item itemvalue="JavaScript Debug.Каталог.html" />
       <item itemvalue="JavaScript Debug.Карточка товара_серия.html" />
       <item itemvalue="JavaScript Debug.Карточка товара.html" />
+      <item itemvalue="JavaScript Debug.Главная.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.Главная.html" />
         <item itemvalue="JavaScript Debug.Карточка товара.html" />
         <item itemvalue="JavaScript Debug.Карточка товара_серия.html" />
         <item itemvalue="JavaScript Debug.Каталог.html" />
