@@ -2,34 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d414d1bc-42f1-4df0-9032-75653bf29638" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/inc/dealers/cont.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inc/komanda/cont.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Дилерская сеть.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Заказать консультацию по телефону.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Наша команда.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Поиск.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Прайс листы.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Скачать прайс-листы.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Поисковый запрос.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/inc/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/inc/footer.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/order/cont.pug" beforeDir="false" afterPath="$PROJECT_DIR$/inc/order/cont.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Главная.html" beforeDir="false" afterPath="$PROJECT_DIR$/Главная.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Карточка товара.html" beforeDir="false" afterPath="$PROJECT_DIR$/Карточка товара.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Карточка товара_серия.html" beforeDir="false" afterPath="$PROJECT_DIR$/Карточка товара_серия.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Каталог.html" beforeDir="false" afterPath="$PROJECT_DIR$/Каталог.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Категория.html" beforeDir="false" afterPath="$PROJECT_DIR$/Категория.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Книга отзывов.html" beforeDir="false" afterPath="$PROJECT_DIR$/Книга отзывов.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Контакты.html" beforeDir="false" afterPath="$PROJECT_DIR$/Контакты.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Модальное окно.html" beforeDir="false" afterPath="$PROJECT_DIR$/Модальное окно.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Новости.html" beforeDir="false" afterPath="$PROJECT_DIR$/Новости.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Покупателям.html" beforeDir="false" afterPath="$PROJECT_DIR$/Покупателям.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Примеры работ_детальная.html" beforeDir="false" afterPath="$PROJECT_DIR$/Примеры работ_детальная.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Сотрудничество.html" beforeDir="false" afterPath="$PROJECT_DIR$/Сотрудничество.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Услуги.html" beforeDir="false" afterPath="$PROJECT_DIR$/Услуги.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/inc/header.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Поиск.pug" beforeDir="false" afterPath="$PROJECT_DIR$/Поиск.pug" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,44 +24,26 @@
           <file leaf-file-name="Поиск.pug" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Поиск.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="620">
-                  <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+                <state>
+                  <caret selection-end-line="28" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Модальное окно.pug" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Модальное окно.pug">
+          <file leaf-file-name="Поисковый запрос.pug" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Поисковый запрос.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+                <state relative-caret-position="520">
+                  <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="cont.pug" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/inc/order/cont.pug">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="12" column="91" selection-start-line="12" selection-start-column="91" selection-end-line="12" selection-end-column="91" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="footer.pug" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/inc/footer.pug">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="56">
-                  <caret line="55" column="28" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="28" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="header.pug" pinned="false" current-in-tab="false">
+          <file leaf-file-name="header.pug" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/inc/header.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="620">
-                  <caret line="70" column="76" selection-start-line="67" selection-start-column="35" selection-end-line="70" selection-end-column="76" />
+                <state relative-caret-position="256">
+                  <caret line="74" column="71" selection-start-line="74" selection-start-column="52" selection-end-line="74" selection-end-column="71" />
                 </state>
               </provider>
             </entry>
@@ -94,8 +55,8 @@
           <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="233">
-                  <caret line="4274" column="17" selection-start-line="4274" selection-start-column="17" selection-end-line="4274" selection-end-column="17" />
+                <state relative-caret-position="603">
+                  <caret line="4365" column="17" selection-start-line="4365" selection-start-column="17" selection-end-line="4365" selection-end-column="17" />
                   <folding>
                     <element signature="e#76310#76336#0" />
                   </folding>
@@ -149,6 +110,7 @@
       <find>&quot;#cost</find>
       <find>.right_col</find>
       <find>btn_group</find>
+      <find>.search_for</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,7 +126,6 @@
         <option value="$PROJECT_DIR$/Книга отзывов.pug" />
         <option value="$PROJECT_DIR$/inc/order/сщте.pug" />
         <option value="$PROJECT_DIR$/Заказать консультацию.pug" />
-        <option value="$PROJECT_DIR$/inc/header.pug" />
         <option value="$PROJECT_DIR$/inc/catalog.pug" />
         <option value="$PROJECT_DIR$/Услуги.pug" />
         <option value="$PROJECT_DIR$/Покупателям.pug" />
@@ -192,10 +153,13 @@
         <option value="$PROJECT_DIR$/Заказать консультацию по телефону.pug" />
         <option value="$PROJECT_DIR$/Прайс листы.pug" />
         <option value="$PROJECT_DIR$/Скачать прайс-листы.pug" />
-        <option value="$PROJECT_DIR$/Поиск.pug" />
-        <option value="$PROJECT_DIR$/css/style.less" />
         <option value="$PROJECT_DIR$/inc/footer.pug" />
         <option value="$PROJECT_DIR$/inc/order/cont.pug" />
+        <option value="$PROJECT_DIR$/404.pug" />
+        <option value="$PROJECT_DIR$/Поиск.pug" />
+        <option value="$PROJECT_DIR$/Поисковый запрос.pug" />
+        <option value="$PROJECT_DIR$/inc/header.pug" />
+        <option value="$PROJECT_DIR$/css/style.less" />
       </list>
     </option>
   </component>
@@ -286,10 +250,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.404.html">
+  <component name="RunManager" selected="JavaScript Debug.Поисковый запрос.html">
     <configuration name="Скачать прайс-листы.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Скачать прайс-листы.html" />
     <configuration name="Примеры работ_детальная.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Примеры работ_детальная.html" />
-    <configuration name="Прайс листы.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Прайс листы.html" />
+    <configuration name="Поисковый запрос.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Поисковый запрос.html" />
     <configuration name="Модальное окно.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Модальное окно.html" />
     <configuration name="Карточка товара.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Карточка товара.html" />
     <configuration name="Карточка товара.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Карточка товара.html" />
@@ -305,19 +269,19 @@
     <configuration name="Сотрудничество.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Сотрудничество.html" />
     <configuration name="Новости.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro-trade.by/Новости.html" />
     <list>
-      <item itemvalue="JavaScript Debug.Прайс листы.html" />
       <item itemvalue="JavaScript Debug.Скачать прайс-листы.html" />
       <item itemvalue="JavaScript Debug.Поиск.html" />
       <item itemvalue="JavaScript Debug.Модальное окно.html" />
       <item itemvalue="JavaScript Debug.404.html" />
+      <item itemvalue="JavaScript Debug.Поисковый запрос.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.Поисковый запрос.html" />
         <item itemvalue="JavaScript Debug.404.html" />
         <item itemvalue="JavaScript Debug.Модальное окно.html" />
         <item itemvalue="JavaScript Debug.Поиск.html" />
         <item itemvalue="JavaScript Debug.Скачать прайс-листы.html" />
-        <item itemvalue="JavaScript Debug.Прайс листы.html" />
       </list>
     </recent_temporary>
   </component>
@@ -343,12 +307,12 @@
       <workItem from="1533640196923" duration="11229000" />
       <workItem from="1533709443361" duration="9231000" />
       <workItem from="1533719292842" duration="6456000" />
-      <workItem from="1534942665565" duration="12041000" />
+      <workItem from="1534942665565" duration="13029000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119073000" />
+    <option name="totallyTimeSpent" value="120061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -359,9 +323,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2835498" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" weight="0.21969697" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" weight="0.5573593" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1663113" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1663113" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -410,28 +374,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/inc/order/сщте.pug" />
-    <entry file="file://$PROJECT_DIR$/Услуги.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="17" column="77" lean-forward="true" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/catalog.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Покупателям.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="77" lean-forward="true" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Покупателям.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -712,41 +654,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/header.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="70" column="76" selection-start-line="67" selection-start-column="35" selection-end-line="70" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="4274" column="17" selection-start-line="4274" selection-start-column="17" selection-end-line="4274" selection-end-column="17" />
-          <folding>
-            <element signature="e#76310#76336#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Поиск.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Модальное окно.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Модальное окно.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -757,10 +668,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/404.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inc/order/cont.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="12" column="91" selection-start-line="12" selection-start-column="91" selection-end-line="12" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Модальное окно.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Поиск.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="28" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Поисковый запрос.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Поисковый запрос.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/header.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="74" column="71" selection-start-line="74" selection-start-column="52" selection-end-line="74" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="4365" column="17" selection-start-line="4365" selection-start-column="17" selection-end-line="4365" selection-end-column="17" />
+          <folding>
+            <element signature="e#76310#76336#0" />
+          </folding>
         </state>
       </provider>
     </entry>
