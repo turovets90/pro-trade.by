@@ -3953,3 +3953,136 @@ article.type_series{
 }
 
 
+
+.c_title{
+  font: 32px @PragmaticaCTT_bold;
+  color: #333;
+  @media (max-width:1200px){
+    font: 30px @PragmaticaCTT_bold;
+  }
+  @media (max-width:991px){
+    font: 25px @PragmaticaCTT_bold;
+  }
+  @media (max-width:767px){
+    font: 20px @PragmaticaCTT_bold;
+  }
+}
+
+.content{
+  ul.c_contacts{
+    li{
+      padding-left: 35px;font: 20px @PragmaticaCTT_bold;
+      line-height: 1.5;
+      @media (max-width:767px){
+        font: 16px @PragmaticaCTT_bold;
+      }
+      &:before{
+        top: 0;
+      }
+      &.tel{
+        &:before{
+          background: url(../img/phone.png);
+          width: 17px;
+          height: 17px;
+          left: 2px;
+          top: 5px;
+          @media (max-width:767px){
+            top: 0;
+          }
+        }
+      }
+
+      &.phone{
+        &:before{
+          background: url(../img/m_phone.png);
+          width: 11px;
+          height: 19px;
+          left: 5px;top: 5px;
+          @media (max-width:767px){
+            top: 0;
+          }
+        }
+      }
+
+
+      &.mail{
+        @media (min-width:1200px){
+          margin-bottom: 20px;
+        }
+        font-family: @PragmaticaCTT;
+        a{
+          text-decoration: underline;
+          color: #333;
+          font-family: @PragmaticaCTT;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+
+        &:before{
+            background: url(../img/mail.png);
+          width: 18px;
+          height: 12px;top:10px;
+          @media (max-width:767px){
+            top: 0;
+          }
+        }
+      }
+
+    }
+  }
+
+
+  .c_time{
+      position: relative; padding-left: 35px;
+    font: 20px @PragmaticaCTT_bold;
+    @media (min-width:1200px){
+      margin-bottom: 30px;
+    }
+    @media (max-width:767px){
+      font: 16px @PragmaticaCTT_bold;
+    }
+    &:before{
+      .b_a();
+      background: url(../img/calendar.png);
+      width: 18px;
+      height: 19px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  .c_loc{
+    position: relative; padding-left: 35px;
+    font: 20px @PragmaticaCTT_bold;
+    @media (max-width:767px){
+      font: 16px @PragmaticaCTT_bold;
+    }
+    &:before{
+      .b_a();
+      background: url(../img/loc.png);
+   width: 13px;
+      height: 16px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+}
+
+@media (max-width:767px){
+  .map{
+    > ymaps{
+        height: 300px !important;
+      >ymaps{
+        height: 300px !important;
+      }
+    }
+  }
+}
+
+
