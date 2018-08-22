@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html
+    head
+        - var page = { title: 'Заказать консультацию по телефону' }
+        include inc/head.pug
+    body#body
+        include inc/header.pug
+        section.page_content
+            .container
+                ul.breadcrumb
+                    li.breadcrumb-item
+                        a(href="#") Главная
+                    li.breadcrumb-item
+                        a(href="#") Покупателям
+                    li.breadcrumb-item
+                        a(href="#content") #{page.title}
+                h1 #{page.title}
+                .content
+                    p Мы ценим время каждого клиента, поэтому предлагаем новый подход к корпоративному обслуживанию от "Pro-Trade".
+                    p.mb-4.pb-3 Заполните приведенную ниже форму и мы обязательно перезвоним Вам в любое удобное Вам время!
+                    a.btn_order(href="#feedback" data-toggle="modal") Заполнить форму
+
+        include inc/footer.pug
+        include inc/scripts.pug

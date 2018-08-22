@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html
+    head
+        - var page = { title: '404 - страница не найдена' }
+        include inc/head.pug
+    body#body
+        include inc/header.pug
+
+        section.page_content
+            .container
+                ul.breadcrumb
+                    li.breadcrumb-item
+                        a(href="#") Главная
+                    li.breadcrumb-item
+                        a(href="#content") #{page.title}
+                h1 #{page.title}
+                .content
+                   p Неправильно набран адрес, или такой страницы на сайте больше не существует.
+                   p Вернуться на <a href="/">главную</a>
+
+
+        include inc/footer.pug
+        include inc/scripts.pug

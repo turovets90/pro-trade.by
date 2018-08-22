@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+html
+    head
+        - var page = { title: 'Скачать прайс-листы' }
+        include inc/head.pug
+    body#body
+        include inc/header.pug
+        section.page_content
+            .container
+                ul.breadcrumb
+                    li.breadcrumb-item
+                        a(href="#") Главная
+                    li.breadcrumb-item
+                        a(href="#") Покупателям
+                    li.breadcrumb-item
+                        a(href="#") Прайс-листы
+                    li.breadcrumb-item
+                        a(href="#content") #{page.title}
+                h1 #{page.title}
+                .content
+                    p Прайс-лист действителен с 01 Явнваря 2018 г.
+                    p.mb-4.pb-3 Скачать его можно по ссылкам ниже.
+                    ul.price_list
+                        -for(var i=1;i<=3;i++)
+                            li
+                                a(href="img/cat_0.png" download="img/cat_0.png") Скачать прайс-лист #{i}
+
+        include inc/footer.pug
+        include inc/scripts.pug

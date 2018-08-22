@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html
+    head
+        - var page = { title: 'Прайс листы' }
+        include inc/head.pug
+    body#body
+        include inc/header.pug
+        section.page_content
+            .container
+                ul.breadcrumb
+                    li.breadcrumb-item
+                        a(href="#") Главная
+                    li.breadcrumb-item
+                        a(href="#") Покупателям
+                    li.breadcrumb-item
+                        a(href="#content") #{page.title}
+                h1 #{page.title}
+                .content
+                    p Для получения прайс-листов заполните, пожалуйста, приведенную форму! Подтверждение запроса и отправка может занять некоторое время.
+                    p.mb-4.pb-3 Прайс-листы будут высланы Вам не позднее 1 суток с момента отправки запроса.
+                    a.btn_order(href="#price" data-toggle="modal") Запрос прайс-листа
+
+        include inc/footer.pug
+        include inc/scripts.pug

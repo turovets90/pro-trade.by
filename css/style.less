@@ -4086,3 +4086,272 @@ article.type_series{
 }
 
 
+.mt-100{
+  margin-top: 100px;
+}
+.mb-200{
+  margin-bottom: 200px;
+}
+
+.popover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1010;
+  display: block;
+  max-width: 340px;
+  background: #fff;
+ .box-shadow( 0 2px 5px 0 rgba(0, 0, 0, 0.2));
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  padding:40px 20px 5px;
+
+  .close{
+    display: inline-block;
+    background: url(../img/close_popover.png);
+    width: 13px;
+    height: 12px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    opacity: 1;
+  }
+  .title{
+    font: 18px @PragmaticaCTT_bold;
+    color: #333;
+  }
+  .contacts_list{
+    li{
+      font: 16px @PragmaticaCTT;
+      padding-left: 30px !important;
+
+
+      a{
+        color: #666666;
+        text-decoration: underline;
+        &:hover{
+          text-decoration: none;
+        }
+        margin-left: 5px;
+      }
+
+      &:before{
+        top: 0;
+      }
+      &.location{
+        margin-bottom: 30px;
+          &:before{
+            background: url(../img/location.png);
+            width: 13px;
+            height: 16px;
+
+          }
+      }
+
+      &.phone{
+        margin-bottom: 5px;
+        &:before{
+          background: url(../img/phone_red.png);
+          width: 14px;
+          height: 14px;
+          top: 2px;
+        }
+      }
+
+      &.m_phone{
+        margin-bottom: 20px;
+        &:before{
+          background: url(../img/m_phone_red.png);
+          width: 10px;
+          height: 17px;
+          top:0;
+        }
+      }
+
+      &.mail{
+        &:before{
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          background: url(../img/mail_red.png);
+          width: 18px;
+          height: 12px;
+        }
+      }
+
+    }
+  }
+
+
+  .arrow{
+   background: url(../img/arrow_popover_3.png);
+width: 62px;
+    height: 22px;
+    display: inline-block;
+    position: absolute;left: 0;
+    right: 0;
+    bottom: -22px;
+    margin: auto;
+  }
+}
+
+
+.type_news.type_team{
+  p.post_title{
+    font-size: 18px;
+    margin-bottom: 5px;
+    +p{
+      font-size: 14px;
+    }
+  }
+
+  .thumbnail+div {
+    padding-bottom: 20px;
+  }
+
+  .contacts_list{
+    padding-left: 0;
+    margin-bottom: 0;
+    li{
+      font: 16px @PragmaticaCTT_bold;
+      padding-left: 25px !important;
+      list-style: none;
+      position: relative;
+      margin-bottom: 8px;
+      &:before{
+        .b_a();
+        left: 0;
+      }
+
+      &.phone{
+        &:before{
+          background: url(../img/phone_red.png);
+          width: 14px;
+          height: 14px;
+          top: 2px;
+        }
+      }
+
+      &.m_phone{
+        &:before{
+          background: url(../img/m_phone_red.png);
+          width: 10px;
+          height: 17px;
+          top:0;
+          left: 3px;
+        }
+      }
+      a{
+        color: #666666;
+        text-decoration: underline;
+        &:hover{
+          text-decoration: none;
+        }
+        margin-left: 5px;
+      }
+
+      &:before{
+        top: 0;
+      }
+
+
+
+    }
+  }
+}
+
+
+.btn_order, .btn_search{
+  display: inline-block;
+  color: #dd2a1b;
+  border: 1px solid #dd2a1b;
+  font: 14px 'PragmaticaCTT Bold';
+  text-transform: uppercase;
+  padding: 10px 25px;
+  background: none;
+  cursor: pointer;
+  &:hover{
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+  }
+}
+
+
+.content{
+
+  a{
+    color: @red_default;
+  }
+
+
+  .price_list{
+    li{
+    padding-left: 0;
+      margin-bottom: 0;
+      &:before{
+      display: none;
+      }
+
+      a{
+        font: 16px @PragmaticaCTT;
+        color: #333;
+        text-decoration: underline;
+        padding-left: 35px;
+        display: inline-block;
+        &:before{
+          .b_a();
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          background: url(../img/doc_download.png);
+          width: 18px;
+          height: 23px;
+        }
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+.search_form_result{
+  .search_form{
+    .flex();
+    .btn_search{
+      text-transform: uppercase;
+      margin-left: 55px;
+      font-size: 18px;
+    }
+  }
+  .form-control{
+    background-color: #f3f3f3;
+    color: #333;
+    font: 16px 'PragmaticaCTT';
+    border: 1px solid #E2E2E2;
+    border-radius: 0;
+    padding: 1.2rem 0.75rem 1.2rem 1.3rem;
+  }
+
+  .count{
+    font-size: 16px;
+  }
+}
+
+
+.search_result_item{
+  border-bottom: 1px solid #E2E2E2;
+  padding: 30px 0;
+  *{
+  font-size: 18px;
+}
+  p{
+    margin-bottom: 0;
+  }
+}

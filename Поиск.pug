@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+html
+    head
+        - var page = { title: 'Поиск' }
+        include inc/head.pug
+    body#body
+        include inc/header.pug
+
+        section.page_content
+            .container
+                ul.breadcrumb
+                    li.breadcrumb-item
+                        a(href="#") Главная
+                    li.breadcrumb-item
+                        a(href="#content") #{page.title}
+                h1 #{page.title}
+                .content
+                    .search_form_result
+                        form.search_form
+                            input.form-control(type="text")
+                            button.btn_search(type="submit") Найти
+                        .count Найдено: 5
+
+                    -for(var i=0;i<=4;i++)
+                        .search_result_item
+                            p <strong>Кресло</strong> офисное <strong>Sparco</strong> DK-5600bb
+                            p Идеальная натуральная кожа или экокожа, предпочтительнее неброские и спокойные тона — черный, коричневый, бежевый.
+
+
+        include inc/footer.pug
+        include inc/scripts.pug
